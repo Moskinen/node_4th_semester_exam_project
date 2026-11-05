@@ -1,8 +1,8 @@
 import fs from 'fs'
 
 export function constructPage(page, options = {}) {
-    const header = header
-    const footer = footer
+    const header = readPage('public/components/header.html')
+    const footer = readPage('public/components/footer.html')
 
     return header
     .replace('{{TAB_TITLE}}', options.tabTitle || "")
@@ -10,6 +10,6 @@ export function constructPage(page, options = {}) {
     + footer
 }
 
-export function readPage(path){
+export function readPage(path) {
     return fs.readFileSync(path, 'utf-8')
 }
