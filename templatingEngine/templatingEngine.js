@@ -5,7 +5,7 @@ export function constructPage(page, options = {}) {
     const footer = footer
 
     return header
-
+    .replace('{{TAB_TITLE}}', options.tabTitle || "")
     + page
     + footer
 }
