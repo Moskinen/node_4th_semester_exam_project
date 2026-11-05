@@ -1,0 +1,33 @@
+{
+  "name": "node_exam",
+  "version": "1.0.0",
+  "description": "This is the exam project in the node.js course for Morten Lyngsie and Olivia Yakoob. The project is a 1v1 version of the New York Times puzzle game \"connections\", normally played as a single player puzzle.",
+  "keywords": [
+    "puzzle",
+    "nyt",
+    "connections",
+    "1v1"
+  ],
+  "homepage": "https://github.com/Moskinen/node_4th_semester_exam_project#readme",
+  "bugs": {
+    "url": "https://github.com/Moskinen/node_4th_semester_exam_project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moskinen/node_4th_semester_exam_project.git"
+  },
+  "license": "ISC",
+  "author": "Moskinen, Oskinen",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0"
+  }
+}
