@@ -1,18 +1,13 @@
 import {} from '..fetchPuzzles.js'
 
 import { Router } from 'express'
+import { fetchPuzzle } from '../../util/fetchPuzzles'
 
 const router = Router()
 
-// GET /api/puzzle/:date
-
-// POST /api/games
-// GET /api/games/:id
-// PUT /api/games/:id
-//
-
-// POST /api/games/:id/join
-
+router.get('/api/puzzles/:date', async (req,res) => {
+    res.send( {data: await fetchPuzzle()} )
+})
 
 
 export default router
